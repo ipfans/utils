@@ -23,3 +23,7 @@ The pattern is as follows:
 }
 
 The pattern above will match EB 02 and the 2 bytes following as"wildcards". The sizes of pattern and fillwith should be the same to avoid issues when patching.
+
+## fixobjc2.idc ##
+
+**fixobjc2.idc** is a IDA Pro 6.0 script to fix ObjC ABI 2.0 for iPhoneOS binaries.
