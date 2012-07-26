@@ -37,3 +37,7 @@ Usage:
 -  Alt+F7 to Load Script  
 -  Shift+P to search MsgMap
 -  If not define, double-click address to identify. Alt+P to confirm.
+
+## *rename.py ##
+
+Help to identify the func names. For more details, find reference in files' header.
