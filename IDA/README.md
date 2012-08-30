@@ -42,7 +42,7 @@ Usage:
 
 Help to identify the func names. For more details, find reference in files' header.
 
-## ios-llvm-fixer.idc ##
+## ios_llvm_fixer.idc ##
 
 Apple is not standing still and in iOS 5 the default compiler is LLVM instead of GCC. It produces somewhat different code and IDA < 6.2 fail to resolve references which are now relative to PC.
 
@@ -63,3 +63,9 @@ The xref is also added so that when you type X on address 0x13350 you'll see whe
 ## RunLogs.py ##
 
 print registers during the IDA debugging. Log the following 100 lines.
+
+## fixobjec.idc ##
+
+**fixobjec.idc** an attempt to improve the original fixobjc.idc script by Willem Jan Hengeveld. For now it's only compatible with Mach-O 32bits binaries for Mac OS X. The Goal is to make it compatible with all Mac OS X and iOS binaries.
+
+Original here: https://github.com/gdbinit/fixobjc
