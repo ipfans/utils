@@ -73,3 +73,7 @@ Original here: https://github.com/gdbinit/fixobjc
 ## logparser.py ##
 
 Thanks to ZDI Team blog post ( http://dvlabs.tippingpoint.com/blog/2008/07/17/mindshare-hit-tracing-in-windbg ) and Matthew Graeber's working ( http://www.exploit-monday.com/2011/07/integrating-windbg-and-ida-for-improved.html )
+
+## FixGetProcName.py ##
+
+This script is help you to change the name with GetProcAddress API function.
