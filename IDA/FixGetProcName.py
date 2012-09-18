@@ -24,7 +24,8 @@ def fixGetProcAddr(ea):
         func_name_ea += 1
     while not p.match(idc.GetDisasm(ea)):
         ea = idc.NextHead(ea, SegEnd(ea))
-    MakeNameEx(LocByName(p.match(idc.GetDisasm(ea)).groups(1)[0]), func_name, idc.SN_NOCHECK)
+    if idc.GetDisasm(ea).find("dword_"):
+        MakeNameEx(LocByName(p.match(idc.GetDisasm(ea)).groups(1)[0]), func_name, idc.SN_NOCHECK)
 
 def imp_cb(ea, name, ord):
     if name:
